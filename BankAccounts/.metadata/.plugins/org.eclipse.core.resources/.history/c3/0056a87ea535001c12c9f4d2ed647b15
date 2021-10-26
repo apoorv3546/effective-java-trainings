@@ -1,0 +1,14 @@
+package bankAccounts;
+
+class BankOperations {
+	
+	
+	public static void main(String[] args) {
+		NewBankAccount account1 = new NewBankAccount(123456789);
+		//System.out.println();
+		System.out.println(account1.getAccountN0());
+		
+	}
+	
+
+}
