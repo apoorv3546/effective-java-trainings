@@ -12,13 +12,21 @@ public class App {
 
 		Atm hdfcSultanpur = new Atm();
 		hdfcSultanpur.a1.show();
-		hdfcSultanpur.a1.deposit(200000);
-		hdfcSultanpur.a1.creditInterest();
-		hdfcSultanpur.a1.withdraw(500,"jfhf");
-		hdfcSultanpur.a1.changePassword("jfhf","new@jfhf");
-       hdfcSultanpur.a1.show();		
-		
+		hdfcSultanpur.a1.deposit(10000);
+		hdfcSultanpur.a1.show();
 
+		hdfcSultanpur.a1.creditInterest();
+		hdfcSultanpur.a1.show();
+
+		hdfcSultanpur.a1.withdraw(10000,"jfhf");
+		hdfcSultanpur.a1.show();
+
+		hdfcSultanpur.a1.changePassword("jfhf","new@jfhf");
+        hdfcSultanpur.a1.show();	
+       
+        
+		BankAccount.transfer(hdfcSultanpur.a1,1000, "new@jfhf", hdfcSultanpur.a2);
+		 hdfcSultanpur.a1.show();
 		
 		
 		

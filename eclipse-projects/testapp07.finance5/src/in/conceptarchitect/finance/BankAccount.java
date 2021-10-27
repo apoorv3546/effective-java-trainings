@@ -41,12 +41,20 @@ public class BankAccount {
 		this.interestRate = interestRate;
 	}
 	
+	public static void transfer( BankAccount source, double amount,String password,BankAccount target) {
+		  if (source.getBalance()>= amount && source.getPassword().equals(salt(password))) {
+			target.deposit(amount);
+			source.withdraw(amount, "jfhf");
+		}
+	  }
+	
 
 	//should there be a getPassword and setPassword
 	//  getPassword is not allowed to show password externally
 	private String getPassword() {
 		return password;
 	}
+	
 	
 	// to change password user must enter old password
 	public void changePassword(String password,String newPassword) {
@@ -66,7 +74,7 @@ public class BankAccount {
 
 	
 
-	private String salt(String password) {
+	private static String salt(String password) {
 		
 		String salted="";
 		
@@ -96,6 +104,8 @@ public class BankAccount {
 		System.out.println();
 		
 	}
+	
+	
 
 	public boolean deposit(double amount) {
 		// TODO Auto-generated method stub
@@ -128,5 +138,6 @@ public class BankAccount {
 		balance+=(balance*interestRate/1200);
 	}
 
+	
 
 }

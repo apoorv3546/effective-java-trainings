@@ -8,6 +8,6 @@ public class Atm {
 	public  BankAccount a5=new BankAccount(2227857, "Abhinav","jhgffego", 50000, 12);
 	
 	
-	
-
+	 
+     
 }
