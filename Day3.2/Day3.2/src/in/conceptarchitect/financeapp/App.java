@@ -13,7 +13,7 @@ public class App {
 		ATM A=new ATM();
 		
 		A.withdraw(2254,"p@ss",2500);
-		A.Deposit(22, 3000);
+		A.Deposit(2254, 3000);
 		
 		A.changePassword("p@ss","apoorv@");
 		
